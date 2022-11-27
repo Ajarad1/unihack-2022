@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+			<title>Geocoding Service</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+</head>
+<body>
+<div class="jumbotron">
+	<div class="container-fluid">
+		<h1>‎ </h1>
+		<p>‎ </p>
+		<form class="form-horizontal" >
+			<div class="form-group">
+				<label for="from" class="col-xs-2 control label"></label>
+				<div class="col-xs-4">
+					<input type="text" id="from" placeholder="Origin" class="form-control" >
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="to" class="col-xs-2 control label"></label>
+				<div class="col-xs-4">
+					<input type="text" id="to" placeholder="Destination" class="form-control" >
+				</div>
+			</div>
+		</form>
+		<br/>
+		<div class="col-xs-offset-2 col-xs-10">
+			<button class="search" style="background-color:#4e9af1" onclick="calcRoute()">Search</button>
+		</div>
+	</div>
+
+
+	<div class="col-10">
+		<div id="map" style="height: 50vh;"></div>
+	</div>
+
+	<div class="container-fluid">
+		<div id="googleMap">
+
+		</div>
+		<dinv>
+			<div id="output">
+
+			</div>
+		</dinv>
+	</div>
+	</div>
+<link rel="stylesheet" href="index_map.css">
+
+	<script src="index_map.js"></script>
+	<script src="boostrap/js/bootstrap.bundle.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUo0gUJ4VFMWxsyaIoUEol_qDE03xin6M&callback=initMap">
+</script>
+</body>
+</html>
